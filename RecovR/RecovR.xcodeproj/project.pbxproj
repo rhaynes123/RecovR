@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55C5C0382BB23A87005DE623 /* RecovRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5C0372BB23A87005DE623 /* RecovRApp.swift */; };
+		55C5C03A2BB23A87005DE623 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5C0392BB23A87005DE623 /* MainView.swift */; };
+		55C5C03E2BB23A88005DE623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C5C03D2BB23A88005DE623 /* Assets.xcassets */; };
+		55C5C0412BB23A88005DE623 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C5C0402BB23A88005DE623 /* Preview Assets.xcassets */; };
+		55C5C04B2BB23A88005DE623 /* RecovRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5C04A2BB23A88005DE623 /* RecovRTests.swift */; };
+		55C5C0552BB23A89005DE623 /* RecovRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5C0542BB23A89005DE623 /* RecovRUITests.swift */; };
+		55C5C0572BB23A89005DE623 /* RecovRUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5C0562BB23A89005DE623 /* RecovRUITestsLaunchTests.swift */; };
+		55C5C0662BB393F9005DE623 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5C0652BB393F9005DE623 /* WorkoutView.swift */; };
+		55C5C0692BB395A2005DE623 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5C0682BB395A2005DE623 /* Activity.swift */; };
+		55C5C06B2BB3A292005DE623 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5C06A2BB3A292005DE623 /* Medication.swift */; };
+		55C5C06D2BB3A301005DE623 /* MedicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5C06C2BB3A301005DE623 /* MedicationsView.swift */; };
+		55C5C06F2BB63F57005DE623 /* ContemplationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5C06E2BB63F57005DE623 /* ContemplationView.swift */; };
+		55C5C0712BB64023005DE623 /* Contemplation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5C0702BB64023005DE623 /* Contemplation.swift */; };
+		55C5C0772BB79555005DE623 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5C0762BB79555005DE623 /* Workout.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55C5C0472BB23A88005DE623 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C5C02C2BB23A87005DE623 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55C5C0332BB23A87005DE623;
+			remoteInfo = RecovR;
+		};
+		55C5C0512BB23A89005DE623 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C5C02C2BB23A87005DE623 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55C5C0332BB23A87005DE623;
+			remoteInfo = RecovR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55C5C0342BB23A87005DE623 /* RecovR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecovR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C5C0372BB23A87005DE623 /* RecovRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecovRApp.swift; sourceTree = "<group>"; };
+		55C5C0392BB23A87005DE623 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		55C5C03D2BB23A88005DE623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55C5C0402BB23A88005DE623 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		55C5C0462BB23A88005DE623 /* RecovRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecovRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C5C04A2BB23A88005DE623 /* RecovRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecovRTests.swift; sourceTree = "<group>"; };
+		55C5C0502BB23A89005DE623 /* RecovRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecovRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C5C0542BB23A89005DE623 /* RecovRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecovRUITests.swift; sourceTree = "<group>"; };
+		55C5C0562BB23A89005DE623 /* RecovRUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecovRUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55C5C0652BB393F9005DE623 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		55C5C0682BB395A2005DE623 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		55C5C06A2BB3A292005DE623 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		55C5C06C2BB3A301005DE623 /* MedicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsView.swift; sourceTree = "<group>"; };
+		55C5C06E2BB63F57005DE623 /* ContemplationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContemplationView.swift; sourceTree = "<group>"; };
+		55C5C0702BB64023005DE623 /* Contemplation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contemplation.swift; sourceTree = "<group>"; };
+		55C5C0762BB79555005DE623 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55C5C0312BB23A87005DE623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C5C0432BB23A88005DE623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C5C04D2BB23A89005DE623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55C5C02B2BB23A87005DE623 = {
+			isa = PBXGroup;
+			children = (
+				55C5C0362BB23A87005DE623 /* RecovR */,
+				55C5C0492BB23A88005DE623 /* RecovRTests */,
+				55C5C0532BB23A89005DE623 /* RecovRUITests */,
+				55C5C0352BB23A87005DE623 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55C5C0352BB23A87005DE623 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55C5C0342BB23A87005DE623 /* RecovR.app */,
+				55C5C0462BB23A88005DE623 /* RecovRTests.xctest */,
+				55C5C0502BB23A89005DE623 /* RecovRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55C5C0362BB23A87005DE623 /* RecovR */ = {
+			isa = PBXGroup;
+			children = (
+				55C5C0392BB23A87005DE623 /* MainView.swift */,
+				55C5C0682BB395A2005DE623 /* Activity.swift */,
+				55C5C0722BB64ECE005DE623 /* Features */,
+				55C5C0372BB23A87005DE623 /* RecovRApp.swift */,
+				55C5C03D2BB23A88005DE623 /* Assets.xcassets */,
+				55C5C03F2BB23A88005DE623 /* Preview Content */,
+			);
+			path = RecovR;
+			sourceTree = "<group>";
+		};
+		55C5C03F2BB23A88005DE623 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				55C5C0402BB23A88005DE623 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		55C5C0492BB23A88005DE623 /* RecovRTests */ = {
+			isa = PBXGroup;
+			children = (
+				55C5C04A2BB23A88005DE623 /* RecovRTests.swift */,
+			);
+			path = RecovRTests;
+			sourceTree = "<group>";
+		};
+		55C5C0532BB23A89005DE623 /* RecovRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				55C5C0542BB23A89005DE623 /* RecovRUITests.swift */,
+				55C5C0562BB23A89005DE623 /* RecovRUITestsLaunchTests.swift */,
+			);
+			path = RecovRUITests;
+			sourceTree = "<group>";
+		};
+		55C5C0722BB64ECE005DE623 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				55C5C0752BB64EEF005DE623 /* Contemplations */,
+				55C5C0742BB64EE3005DE623 /* Exercise */,
+				55C5C0732BB64ED9005DE623 /* Medications */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		55C5C0732BB64ED9005DE623 /* Medications */ = {
+			isa = PBXGroup;
+			children = (
+				55C5C06C2BB3A301005DE623 /* MedicationsView.swift */,
+				55C5C06A2BB3A292005DE623 /* Medication.swift */,
+			);
+			path = Medications;
+			sourceTree = "<group>";
+		};
+		55C5C0742BB64EE3005DE623 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				55C5C0652BB393F9005DE623 /* WorkoutView.swift */,
+				55C5C0762BB79555005DE623 /* Workout.swift */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+		55C5C0752BB64EEF005DE623 /* Contemplations */ = {
+			isa = PBXGroup;
+			children = (
+				55C5C0702BB64023005DE623 /* Contemplation.swift */,
+				55C5C06E2BB63F57005DE623 /* ContemplationView.swift */,
+			);
+			path = Contemplations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55C5C0332BB23A87005DE623 /* RecovR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C5C05A2BB23A89005DE623 /* Build configuration list for PBXNativeTarget "RecovR" */;
+			buildPhases = (
+				55C5C0302BB23A87005DE623 /* Sources */,
+				55C5C0312BB23A87005DE623 /* Frameworks */,
+				55C5C0322BB23A87005DE623 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecovR;
+			productName = RecovR;
+			productReference = 55C5C0342BB23A87005DE623 /* RecovR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55C5C0452BB23A88005DE623 /* RecovRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C5C05D2BB23A89005DE623 /* Build configuration list for PBXNativeTarget "RecovRTests" */;
+			buildPhases = (
+				55C5C0422BB23A88005DE623 /* Sources */,
+				55C5C0432BB23A88005DE623 /* Frameworks */,
+				55C5C0442BB23A88005DE623 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55C5C0482BB23A88005DE623 /* PBXTargetDependency */,
+			);
+			name = RecovRTests;
+			productName = RecovRTests;
+			productReference = 55C5C0462BB23A88005DE623 /* RecovRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55C5C04F2BB23A89005DE623 /* RecovRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C5C0602BB23A89005DE623 /* Build configuration list for PBXNativeTarget "RecovRUITests" */;
+			buildPhases = (
+				55C5C04C2BB23A89005DE623 /* Sources */,
+				55C5C04D2BB23A89005DE623 /* Frameworks */,
+				55C5C04E2BB23A89005DE623 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55C5C0522BB23A89005DE623 /* PBXTargetDependency */,
+			);
+			name = RecovRUITests;
+			productName = RecovRUITests;
+			productReference = 55C5C0502BB23A89005DE623 /* RecovRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55C5C02C2BB23A87005DE623 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					55C5C0332BB23A87005DE623 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					55C5C0452BB23A88005DE623 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 55C5C0332BB23A87005DE623;
+					};
+					55C5C04F2BB23A89005DE623 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 55C5C0332BB23A87005DE623;
+					};
+				};
+			};
+			buildConfigurationList = 55C5C02F2BB23A87005DE623 /* Build configuration list for PBXProject "RecovR" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55C5C02B2BB23A87005DE623;
+			productRefGroup = 55C5C0352BB23A87005DE623 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55C5C0332BB23A87005DE623 /* RecovR */,
+				55C5C0452BB23A88005DE623 /* RecovRTests */,
+				55C5C04F2BB23A89005DE623 /* RecovRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55C5C0322BB23A87005DE623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C5C0412BB23A88005DE623 /* Preview Assets.xcassets in Resources */,
+				55C5C03E2BB23A88005DE623 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C5C0442BB23A88005DE623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C5C04E2BB23A89005DE623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55C5C0302BB23A87005DE623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C5C0712BB64023005DE623 /* Contemplation.swift in Sources */,
+				55C5C06D2BB3A301005DE623 /* MedicationsView.swift in Sources */,
+				55C5C0692BB395A2005DE623 /* Activity.swift in Sources */,
+				55C5C06F2BB63F57005DE623 /* ContemplationView.swift in Sources */,
+				55C5C0662BB393F9005DE623 /* WorkoutView.swift in Sources */,
+				55C5C0772BB79555005DE623 /* Workout.swift in Sources */,
+				55C5C03A2BB23A87005DE623 /* MainView.swift in Sources */,
+				55C5C06B2BB3A292005DE623 /* Medication.swift in Sources */,
+				55C5C0382BB23A87005DE623 /* RecovRApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C5C0422BB23A88005DE623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C5C04B2BB23A88005DE623 /* RecovRTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C5C04C2BB23A89005DE623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C5C0552BB23A89005DE623 /* RecovRUITests.swift in Sources */,
+				55C5C0572BB23A89005DE623 /* RecovRUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55C5C0482BB23A88005DE623 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55C5C0332BB23A87005DE623 /* RecovR */;
+			targetProxy = 55C5C0472BB23A88005DE623 /* PBXContainerItemProxy */;
+		};
+		55C5C0522BB23A89005DE623 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55C5C0332BB23A87005DE623 /* RecovR */;
+			targetProxy = 55C5C0512BB23A89005DE623 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		55C5C0582BB23A89005DE623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55C5C0592BB23A89005DE623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55C5C05B2BB23A89005DE623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RecovR/Preview Content\"";
+				DEVELOPMENT_TEAM = P7FYQ2HW53;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Richard.RecovR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55C5C05C2BB23A89005DE623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RecovR/Preview Content\"";
+				DEVELOPMENT_TEAM = P7FYQ2HW53;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Richard.RecovR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		55C5C05E2BB23A89005DE623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7FYQ2HW53;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Richard.RecovRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecovR.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RecovR";
+			};
+			name = Debug;
+		};
+		55C5C05F2BB23A89005DE623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7FYQ2HW53;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Richard.RecovRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecovR.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RecovR";
+			};
+			name = Release;
+		};
+		55C5C0612BB23A89005DE623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7FYQ2HW53;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Richard.RecovRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RecovR;
+			};
+			name = Debug;
+		};
+		55C5C0622BB23A89005DE623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7FYQ2HW53;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Richard.RecovRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RecovR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55C5C02F2BB23A87005DE623 /* Build configuration list for PBXProject "RecovR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C5C0582BB23A89005DE623 /* Debug */,
+				55C5C0592BB23A89005DE623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C5C05A2BB23A89005DE623 /* Build configuration list for PBXNativeTarget "RecovR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C5C05B2BB23A89005DE623 /* Debug */,
+				55C5C05C2BB23A89005DE623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C5C05D2BB23A89005DE623 /* Build configuration list for PBXNativeTarget "RecovRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C5C05E2BB23A89005DE623 /* Debug */,
+				55C5C05F2BB23A89005DE623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C5C0602BB23A89005DE623 /* Build configuration list for PBXNativeTarget "RecovRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C5C0612BB23A89005DE623 /* Debug */,
+				55C5C0622BB23A89005DE623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55C5C02C2BB23A87005DE623 /* Project object */;
+}
