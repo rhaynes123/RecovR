@@ -12,12 +12,7 @@ struct ContemplationView: View {
     @Query private var contemplations: [Contemplation]
     @State private var showSheet: Bool = false
     
-    private func addItem() {
-        withAnimation {
-            //let newItem = Activity(timestamp: Date())
-            //modelContext.insert(newItem)
-        }
-    }
+    
     
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
@@ -26,9 +21,40 @@ struct ContemplationView: View {
             }
         }
     }
-    private func contemplationSheet() -> some View {
-        @State var technique : Technique = .meditation
-        return NavigationStack {
+    
+    var body: some View {
+        List {
+            ForEach(contemplations) { item in
+                NavigationLink("\(item.technique.rawValue) \(item.timestamp, format: Date.FormatStyle(time: .standard))", destination: LogContemplationView(contemplation: item))
+            }
+            .onDelete(perform: deleteItems)
+           
+        }.sheet(isPresented: $showSheet) {
+            contemplationSheet()
+        }
+        Button(action : {
+            showSheet.toggle()
+        }) {
+            Label("Add New \(Category.contemplation.rawValue)", systemImage: "figure.mind.and.body")
+        }.frame(width: 300, height: 50, alignment: .center)
+            .background(Color.blue)
+            .foregroundColor(Color.black)
+            .cornerRadius(10)
+    }
+}
+
+struct contemplationSheet: View {
+    @Environment(\.dismiss) var dismiss
+    @Environment(\.modelContext) private var modelContext
+    @State var technique : Technique = .meditation
+    @State var time : Date = Date()
+    private func addItem(newItem : Contemplation) {
+        withAnimation {
+            modelContext.insert(newItem)
+        }
+    }
+    var body: some View { 
+        NavigationStack {
             Form {
                 Picker("Technique", selection: $technique){
                     ForEach(Technique.allCases, id: \.self) {technique in
@@ -36,44 +62,25 @@ struct ContemplationView: View {
                         
                     }
                 }
-               
+                DatePicker("Time", selection: $time, displayedComponents: .hourAndMinute)
+                
             }.toolbar {
                 ToolbarItemGroup(placement: .topBarLeading) {
-                    Button("Cancel") {showSheet.toggle()}
+                    Button("Cancel") {dismiss()}
                 }
                 ToolbarItemGroup(placement: .topBarTrailing) {
                     Button("Save") {
-                        addItem()
-                        showSheet.toggle()
+                        let newItem = Contemplation(timestamp: Date(), category: .contemplation, technique: technique)
+                        addItem(newItem: newItem)
+                        dismiss()
                     }
                 }
             }
         }
     }
-    
-    var body: some View {
-        VStack {
-            ForEach(contemplations) { item in
-                NavigationLink {
-                    Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                } label: {
-                    Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                }
-            }
-            .onDelete(perform: deleteItems)
-            Button(action : {
-                showSheet.toggle()
-            }) {
-                Label("Add New \(Category.contemplation.rawValue)", systemImage: "figure.mind.and.body")
-            }.frame(width: 300, height: 50, alignment: .center)
-                .background(Color.blue)
-                .foregroundColor(Color.black)
-                .cornerRadius(10)
-        }.sheet(isPresented: $showSheet) {
-            contemplationSheet()
-        }
-    }
 }
+
+
 
 #Preview {
     ContemplationView()

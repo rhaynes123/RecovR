@@ -11,13 +11,7 @@ struct WorkoutView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var exercises: [Workout]
     @State private var showSheet: Bool = false
-    private func addItem() {
-        withAnimation {
-            //let newItem = Activity(timestamp: Date())
-            //modelContext.insert(newItem)
-        }
-    }
-
+    
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
             for index in offsets {
@@ -25,9 +19,44 @@ struct WorkoutView: View {
             }
         }
     }
-    private func workoutSheet() -> some View {
-        @State var exercise : Exercise = .pushUp
-        return NavigationStack {
+    
+    
+    var body: some View {
+        
+        List {
+            ForEach(exercises) { item in
+                NavigationLink("\(item.exercise.rawValue)", destination: LogWorkoutView(workout: item))
+            }
+            .onDelete(perform: deleteItems)
+            
+           
+        }.sheet(isPresented: $showSheet){
+            workoutSheet()
+        }
+        Button(action : {
+            showSheet.toggle()
+        }) {
+            Label("Add New \(Category.exercise.rawValue)", systemImage: "figure.run")
+        }
+        .frame(width: 300, height: 50, alignment: .center)
+            .background(Color.green)
+            .foregroundColor(Color.black)
+            .cornerRadius(10)
+    }
+    
+}
+struct workoutSheet: View {
+    @Environment(\.dismiss) var dismiss
+    @Environment(\.modelContext) private var modelContext
+    @State var exercise : Exercise = .pushUp
+    private func addItem(newItem: Workout) {
+        withAnimation {
+            modelContext.insert(newItem)
+        }
+    }
+
+    var body: some View {
+            NavigationStack {
             Form {
                 Picker("Exercise", selection: $exercise){
                     ForEach(Exercise.allCases, id: \.self) {technique in
@@ -35,50 +64,25 @@ struct WorkoutView: View {
                         
                     }
                 }
-               
+                
                 
             }.toolbar {
                 ToolbarItemGroup(placement: .topBarLeading) {
-                    Button("Cancel") {showSheet.toggle()}
+                    Button("Cancel") {dismiss()}
                 }
                 ToolbarItemGroup(placement: .topBarTrailing) {
                     Button("Save") {
-                        addItem()
-                        showSheet.toggle()
+                        let workout = Workout(timestamp: Date(), exercise: exercise, category: .exercise)
+                        addItem(newItem: workout)
+                        dismiss()
                     }
                 }
             }
         }
     }
-    
-    var body: some View {
-        
-        VStack {
-            ForEach(exercises) { item in
-                NavigationLink {
-                    Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                } label: {
-                    Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                }
-            }
-            .onDelete(perform: deleteItems)
-            
-            Button(action : {
-                showSheet.toggle()
-            }) {
-                Label("Add New \(Category.exercise.rawValue)", systemImage: "figure.run")
-            }
-            .frame(width: 300, height: 50, alignment: .center)
-                .background(Color.green)
-                .foregroundColor(Color.black)
-                .cornerRadius(10)
-        }.sheet(isPresented: $showSheet){
-            workoutSheet()
-        }
-        
-    }
-    
 }
+
+
 
 #Preview {
     WorkoutView().modelContainer(for: Workout.self, inMemory: true)

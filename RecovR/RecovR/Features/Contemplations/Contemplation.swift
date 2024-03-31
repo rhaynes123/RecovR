@@ -11,15 +11,26 @@ import SwiftData
 final class Contemplation: Activity {
     var category: Category
     var timestamp: Date
-    var title: String
     var technique: Technique
-    init(timestamp: Date, title: String, category: Category, technique: Technique) {
-        self.title = title
+    init(timestamp: Date, category: Category, technique: Technique) {
+        
         self.category = category
         self.timestamp = timestamp
         self.technique = technique
     }
     
+}
+
+@Model
+final class ContemplationHistory {
+    var technique: Technique
+    var startTime : Date
+    var endTime : Date
+    init(technique: Technique, startTime: Date, endTime: Date) {
+        self.technique = technique
+        self.startTime = startTime
+        self.endTime = endTime
+    }
 }
 
 enum Technique: String, CaseIterable, Codable {

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55BCF4652BB8BB5400DE071C /* LogWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCF4642BB8BB5400DE071C /* LogWorkoutView.swift */; };
+		55BCF4672BB8C2C900DE071C /* WorkoutHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCF4662BB8C2C900DE071C /* WorkoutHistoryView.swift */; };
+		55BCF4692BB9A87900DE071C /* LogMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCF4682BB9A87900DE071C /* LogMedicationView.swift */; };
+		55BCF46B2BB9ADC100DE071C /* MedicationHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCF46A2BB9ADC100DE071C /* MedicationHistoryView.swift */; };
+		55BCF46D2BB9BD3400DE071C /* ContemplationsHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCF46C2BB9BD3400DE071C /* ContemplationsHistoryView.swift */; };
+		55BCF46F2BB9BD7500DE071C /* LogContemplationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCF46E2BB9BD7500DE071C /* LogContemplationView.swift */; };
 		55C5C0382BB23A87005DE623 /* RecovRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5C0372BB23A87005DE623 /* RecovRApp.swift */; };
 		55C5C03A2BB23A87005DE623 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5C0392BB23A87005DE623 /* MainView.swift */; };
 		55C5C03E2BB23A88005DE623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C5C03D2BB23A88005DE623 /* Assets.xcassets */; };
@@ -41,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55BCF4642BB8BB5400DE071C /* LogWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogWorkoutView.swift; sourceTree = "<group>"; };
+		55BCF4662BB8C2C900DE071C /* WorkoutHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistoryView.swift; sourceTree = "<group>"; };
+		55BCF4682BB9A87900DE071C /* LogMedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMedicationView.swift; sourceTree = "<group>"; };
+		55BCF46A2BB9ADC100DE071C /* MedicationHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationHistoryView.swift; sourceTree = "<group>"; };
+		55BCF46C2BB9BD3400DE071C /* ContemplationsHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContemplationsHistoryView.swift; sourceTree = "<group>"; };
+		55BCF46E2BB9BD7500DE071C /* LogContemplationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogContemplationView.swift; sourceTree = "<group>"; };
 		55C5C0342BB23A87005DE623 /* RecovR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecovR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C5C0372BB23A87005DE623 /* RecovRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecovRApp.swift; sourceTree = "<group>"; };
 		55C5C0392BB23A87005DE623 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -158,6 +170,8 @@
 			children = (
 				55C5C06C2BB3A301005DE623 /* MedicationsView.swift */,
 				55C5C06A2BB3A292005DE623 /* Medication.swift */,
+				55BCF4682BB9A87900DE071C /* LogMedicationView.swift */,
+				55BCF46A2BB9ADC100DE071C /* MedicationHistoryView.swift */,
 			);
 			path = Medications;
 			sourceTree = "<group>";
@@ -167,6 +181,8 @@
 			children = (
 				55C5C0652BB393F9005DE623 /* WorkoutView.swift */,
 				55C5C0762BB79555005DE623 /* Workout.swift */,
+				55BCF4642BB8BB5400DE071C /* LogWorkoutView.swift */,
+				55BCF4662BB8C2C900DE071C /* WorkoutHistoryView.swift */,
 			);
 			path = Exercise;
 			sourceTree = "<group>";
@@ -176,6 +192,8 @@
 			children = (
 				55C5C0702BB64023005DE623 /* Contemplation.swift */,
 				55C5C06E2BB63F57005DE623 /* ContemplationView.swift */,
+				55BCF46C2BB9BD3400DE071C /* ContemplationsHistoryView.swift */,
+				55BCF46E2BB9BD7500DE071C /* LogContemplationView.swift */,
 			);
 			path = Contemplations;
 			sourceTree = "<group>";
@@ -310,13 +328,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55BCF46B2BB9ADC100DE071C /* MedicationHistoryView.swift in Sources */,
+				55BCF46F2BB9BD7500DE071C /* LogContemplationView.swift in Sources */,
 				55C5C0712BB64023005DE623 /* Contemplation.swift in Sources */,
+				55BCF4652BB8BB5400DE071C /* LogWorkoutView.swift in Sources */,
 				55C5C06D2BB3A301005DE623 /* MedicationsView.swift in Sources */,
 				55C5C0692BB395A2005DE623 /* Activity.swift in Sources */,
+				55BCF46D2BB9BD3400DE071C /* ContemplationsHistoryView.swift in Sources */,
 				55C5C06F2BB63F57005DE623 /* ContemplationView.swift in Sources */,
 				55C5C0662BB393F9005DE623 /* WorkoutView.swift in Sources */,
 				55C5C0772BB79555005DE623 /* Workout.swift in Sources */,
 				55C5C03A2BB23A87005DE623 /* MainView.swift in Sources */,
+				55BCF4692BB9A87900DE071C /* LogMedicationView.swift in Sources */,
+				55BCF4672BB8C2C900DE071C /* WorkoutHistoryView.swift in Sources */,
 				55C5C06B2BB3A292005DE623 /* Medication.swift in Sources */,
 				55C5C0382BB23A87005DE623 /* RecovRApp.swift in Sources */,
 			);

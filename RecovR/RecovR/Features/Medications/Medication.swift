@@ -23,6 +23,20 @@ final class Medication: Activity {
     }
 }
 
+@Model
+final class MedicationHistory {
+    var administration : Adminstration
+    var dosageTime : Date
+    var dose: Int
+    var title: String
+    init(administration: Adminstration, startTime: Date, dose: Int, title: String) {
+        self.administration = administration
+        self.dosageTime = startTime
+        self.dose = dose
+        self.title = title
+    }
+}
+
 enum Adminstration: String, Codable, CaseIterable {
     case pill = "Pill"
     case teaspoon = "Teaspoon"

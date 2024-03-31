@@ -23,28 +23,23 @@ struct MedicationsView: View {
     
     
     var body: some View {
-        VStack {
+        List {
             ForEach(medications) { item in
-                NavigationLink {
-                    Text("Name: \(item.title)")
-                    Text("Dosage: \(item.administration)")
-                    Text("Dosage Time at \(item.timestamp, format: Date.FormatStyle( time: .standard))")
-                } label: {
-                    Text("\(item.title) \(item.timestamp, format: Date.FormatStyle(time: .standard))")
-                }
+                NavigationLink("\(item.title) \(item.timestamp, format: Date.FormatStyle(time: .standard))", destination: LogMedicationView(medication: item))
             }
             .onDelete(perform: deleteItems)
-            Button(action : {
-                showSheet.toggle()
-            }) {
-                Label("Add New \(Category.medication.rawValue)", systemImage: "pills.circle")
-            }.frame(width: 300, height: 50, alignment: .center)
-                .background(Color.yellow)
-                .foregroundColor(Color.black)
-                .cornerRadius(10)
         }.sheet(isPresented: $showSheet) {
             medicationSheet()
         }
+        
+        Button(action : {
+            showSheet.toggle()
+        }) {
+            Label("Add New \(Category.medication.rawValue)", systemImage: "pills.circle")
+        }.frame(width: 300, height: 50, alignment: .center)
+            .background(Color.yellow)
+            .foregroundColor(Color.black)
+            .cornerRadius(10)
     }
 }
 
@@ -104,7 +99,10 @@ struct medicationSheet : View {
     }
 }
 
+
+
 #Preview {
-    
-    MedicationsView().modelContainer(for: Medication.self, inMemory: true)
+    let container = try! ModelContainer(for: Medication.self, configurations: ModelConfiguration(isStoredInMemoryOnly: true))
+    container.mainContext.insert(Medication(timestamp: Date(), administration: .pill, title: "Asprin", category: .medication, dose: 2))
+    return MedicationsView().modelContainer(container)
 }

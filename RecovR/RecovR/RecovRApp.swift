@@ -13,8 +13,11 @@ struct RecovRApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Workout.self,
+            WorkoutHistory.self,
             Medication.self,
-            Contemplation.self
+            MedicationHistory.self,
+            Contemplation.self,
+            ContemplationHistory.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -30,5 +33,10 @@ struct RecovRApp: App {
             MainView()
         }
         .modelContainer(sharedModelContainer)
+    }
+    init() {
+        // How To find the raw data
+        // https://www.youtube.com/watch?v=CAr_1kcf2_c&t=1864s
+        print(URL.applicationSupportDirectory.path(percentEncoded: false))
     }
 }
